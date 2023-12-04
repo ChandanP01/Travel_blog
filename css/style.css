@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lumanosimo&family=Poppins:wght@400;500;600;700&family=Raleway&family=Roboto+Mono&family=Ubuntu:wght@400;500;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    color: #020202;
+    scroll-behavior: smooth;
+}
+
+.background {
+    background: rgb(216, 216, 216, 0.5);
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/bg-pic.jpg)no-repeat center center fixed;
+    background-size: cover;
+}
+
+#main p {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #020202;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #043da0;
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+article,
+.sidebar-widget {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article>header {
+    background-color: #d8d8d8;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+}
+
+i {
+    margin: 10px 2px;
+    cursor: pointer;
+}
+i:hover{
+    color: #ff000d;
+}
+
+td:nth-child(2) {
+    padding-left: 30px;
+}
+
+
+/* Responsive code */
+@media (min-width:1000px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #wrapper {
+        flex-direction: row;
+    }
+
+    main {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+        margin-left: 15px;
+    }
+
+    article>header {
+        justify-content: space-around;
+    }
+}
